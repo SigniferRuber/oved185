@@ -1,3 +1,17 @@
+-- from shell run sqlplus
+sqlplus / as sysdba
+
+-- set orclpdb as current container
+alter session set container = orclpdb
+
+-- check status for orclpdb
+select name, open_mode from v$pdbs;
+
+-- if it is not open in READ-WRITE but only MOUNTED:
+alter pluggable database open;
+
+
+-- select w/ LIKE
 select *
 from COUNTRIES
 where COUNTRY_ID like 'I%';
