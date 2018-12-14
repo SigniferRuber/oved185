@@ -2,7 +2,7 @@
 sqlplus / as sysdba
 
 -- set orclpdb as current container
-alter session set container = orclpdb
+alter session set container = orclpdb;
 
 -- check status for orclpdb
 select name, open_mode from v$pdbs;
