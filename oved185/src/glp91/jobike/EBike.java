@@ -2,23 +2,25 @@ package glp91.jobike;
 
 public class EBike extends Bike {
 
-	private static int charge;
+	private int charge;
 
-	public EBike(String id, boolean broken, String position, float cost) {
-		super(id, broken, position, cost);
-
+	public EBike() {
+		// TODO Auto-generated constructor stub
 	}
-
-	public void charge(int charge) {
+	
+	public EBike(String id, boolean broken, String position, int charge) {
+		super(id, broken, position);
 		this.charge = charge;
+		this.cost = 1.80;
 	}
 
-	public static int getCharge() {
+	
+	public  int getCharge() {
 		return charge;
 	}
 
-	public static void setCharge(int charge) {
-		EBike.charge = charge;
+	public void setCharge(int charge) {
+		this.charge = charge;
 	}
 
 }

@@ -2,9 +2,13 @@ package glp91.jobike;
 
 public class Sbike extends Bike{
 
-	public Sbike(String id, boolean broken, String position, float cost) {
-		super(id, broken, position, cost);
-		
+	public Sbike() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Sbike(String id, boolean broken, String position) {
+		super(id, broken, position);
+		this.cost = 1;
 	}
 
 	

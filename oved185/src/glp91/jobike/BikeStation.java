@@ -6,6 +6,16 @@ public class BikeStation {
 	
 	private HashMap<String, Bike> bikes;
 	
+	private String nameStation;
+	
+	public String getNameStation() {
+		return nameStation;
+	}
+
+	public void setNameStation(String nameStation) {
+		this.nameStation = nameStation;
+	}
+
 	public BikeStation() {
 		
 	}

@@ -2,64 +2,64 @@ package glp91.jobike;
 
 public abstract class Bike {
 	
-	protected static String id;
-	protected static float cost;
-	protected static String position;
-	protected static boolean broken;
+	private String id;
+	protected double cost;
+	private String position;
+	private boolean broken;
 	
-	
-	public Bike(String number, boolean broken, String position, float cost) {
+	public Bike() {
+		// TODO Auto-generated constructor stub
+	}
+	public Bike(String id, boolean broken, String position) {
 		this.id = id;
 		this.broken = broken;
-		this.cost = cost;
+		
 		this.position = position;
 				
 	}
 
 
-	public static String getId() {
+	public String getId() {
 		return id;
 	}
 
 
-	public static float getCost() {
+	public void setId(String id) {
+		this.id = id;
+	}
+
+
+	public double getCost() {
 		return cost;
 	}
 
 
-	public static String getposition() {
+	public void setCost(double cost) {
+		this.cost = cost;
+	}
+
+
+	public String getPosition() {
 		return position;
 	}
 
 
-	public static boolean isBroken() {
+	public void setPosition(String position) {
+		this.position = position;
+	}
+
+
+	public boolean isBroken() {
 		return broken;
 	}
 
 
-	public static String getPosition() {
-		return position;
+	public void setBroken(boolean broken) {
+		this.broken = broken;
 	}
 
 
-	public static void setPosition(String position) {
-		Bike.position = position;
-	}
-
-
-	public static void setNumber(String id) {
-		Bike.id = id;
-	}
-
-
-	public static void setCost(float cost) {
-		Bike.cost = cost;
-	}
-
-
-	public static void setBroken(boolean broken) {
-		Bike.broken = broken;
-	}
+	
 	
 	
 	
